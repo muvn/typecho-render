@@ -1,9 +1,9 @@
 services:
   # A Docker web service
   - type: web
-    name: Typcho
+    name: Typecho
     env: docker
-    repo:  # optional
+    repo: https://github.com/muvn/typecho-render.git # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
