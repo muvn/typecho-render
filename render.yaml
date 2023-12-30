@@ -37,6 +37,3 @@ services:
       - key: TYPECHO_SITE_URL
         # value: site_url
         sync: false
-      - key: CDN
-        # value: 
-        sync: false
