@@ -10,7 +10,6 @@ services:
     envVars:
       - key: TIMEZONE
         value: Asia/Shanghai
-
       - key: TYPECHO_DB_ADAPTER
         # value: Pdo_Pgsql
         sync: false
@@ -34,9 +33,10 @@ services:
         sync: false
       - key: TYPECHO_DB_CHARSET
         # value: db_charset
+        sync: false
       - key: TYPECHO_SITE_URL
-        # value site_url
+        # value: site_url
+        sync: false
       - key: CDN
         # value: 
         sync: false
-      
