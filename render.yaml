@@ -1,0 +1,42 @@
+services:
+  # A Docker web service
+  - type: web
+    name: Typcho
+    env: docker
+    repo:  # optional
+    region: oregon # optional (defaults to oregon)
+    plan: free # optional (defaults to starter)
+    healthCheckPath: /
+    envVars:
+      - key: TIMEZONE
+        value: Asia/Shanghai
+
+      - key: TYPECHO_DB_ADAPTER
+        # value: Pdo_Pgsql
+        sync: false
+      - key: TYPECHO_DB_HOST
+        # value: db_host
+        sync: false
+      - key: TYPECHO_DB_PORT
+        # value: 5432
+        sync: false
+      - key: TYPECHO_DB_USER
+        # value: db_user
+        sync: false
+      - key: TYPECHO_DB_PASSWORD
+        # value: db_password
+        sync: false
+      - key: TYPECHO_DB_DATABASE
+        # value: db_name
+        sync: false
+      - key: TYPECHO_DB_PREFIX
+        # value: alist_
+        sync: false
+      - key: TYPECHO_DB_CHARSET
+        # value: db_charset
+      - key: TYPECHO_SITE_URL
+        # value site_url
+      - key: CDN
+        # value: 
+        sync: false
+      
